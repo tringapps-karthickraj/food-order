@@ -25,7 +25,7 @@ include('./config/constant.php');
       else
       {
         $_SESSION['login'] = "<div class='error text-centre'>Username and Password did not match.</div>";
-          header('location:'.SITEURL.'admin/login1.php');
+          header('location:'.SITEURL.'login1.php');
       }
         }
         ?>

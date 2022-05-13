@@ -30,6 +30,9 @@
                     <li>
                         <a href="<?php echo SITEURL;?>contact.php">Contact</a>
                     </li>
+                    <li>
+                        <a href="<?php echo SITEURL;?>logout.php">Logout</a>
+                    </li> 
                 </ul>
             </div>
 

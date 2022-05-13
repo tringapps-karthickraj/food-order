@@ -12,4 +12,7 @@
     $conn = mysqli_connect(LOCALHOST,DB_USERNAME,DB_PASSWORD) or die (mysqli_error()); // Data base connection.
     $db_select = mysqli_select_db($conn, DB_NAME) or die (mysqli_error()); //Selecting Databse.
 
+    if(!isset($_SESSION['user']) && !isset($_SESSION['role'])){
+        header('location:'.SITEURL.'login1.php');
+    }
 ?>

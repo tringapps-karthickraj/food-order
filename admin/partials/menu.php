@@ -22,7 +22,7 @@
             <li><a class="atag" href="manage-category.php">Category</a></li>
             <li><a class="atag" href="manage-food.php">Food</a></li>
             <li><a class="atag" href="manage-order.php">Order</a></li>
-            <li><a class="atag" href="logout.php">Logout</a></li>
+            <li><a class="atag" href="../logout.php">Logout</a></li>
             </ul>
         </div>
     </div>
