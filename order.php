@@ -56,11 +56,11 @@ else
                     <div class="food-menu-desc">
                         <h3><?php echo $title;?></h3>
                         <input type="hidden" name="food"value="<?php echo $title;?>">
-                        <p class="food-price"> ₹<?php echo $price ?></p>
+                        <p class="food-price">₹<span id="prize-food"><?php echo $price ?></span></p>
                         <input type="hidden"name="price"value="<?php echo $price;?>">
 
                         <div class="order-label">Quantity</div>
-                        <input type="number" name="qty" class="input-responsive" value="1" required>
+                        <input type="number" name="qty"  onchange="prizeDisplay(event)" class="input-responsive" value="1" required>
                         
                     </div>
 
@@ -131,6 +131,14 @@ else
                     } 
                     ?>
         </div>
+        <script>
+var initialPrize = document.getElementById("prize-food").innerHTML;
+function prizeDisplay(ev){
+    document.getElementById("prize-food").innerHTML = initialPrize * ev.target.value;
+}
+
+
+        </script>
     </section>
     <!-- fOOD sEARCH Section Ends Here -->
 
